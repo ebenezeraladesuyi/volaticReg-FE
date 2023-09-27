@@ -9,7 +9,7 @@ const url = "https://volatic-reg-be.onrender.com/volatic"
 
 
 // register
-export const registerTeam = async (data : user) => {
+export const registerUser = async (data : user) => {
     return await axios.post(`${url}/register`, data)
     .then((res) => {
         return res.data
